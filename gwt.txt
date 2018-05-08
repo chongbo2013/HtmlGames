@@ -1,0 +1,2 @@
+The task should be ./gradlew html:superDev
+http://localhost:8080/html/

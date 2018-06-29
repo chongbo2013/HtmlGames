@@ -8,7 +8,10 @@ import com.google.gwt.event.logical.shared.ResizeEvent;
 import com.google.gwt.event.logical.shared.ResizeHandler;
 import com.google.gwt.user.client.Window;
 import com.mygdx.game.MyGdxGame;
+//http://www.gwtproject.org/doc/latest/DevGuideCodingBasicsJSNI.html
 
+//js call java
+//java call js
 public class HtmlLauncher extends GwtApplication {
 
         // USE THIS CODE FOR A FIXED SIZE APPLICATION

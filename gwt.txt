@@ -1,2 +1,5 @@
 The task should be ./gradlew html:superDev
 http://localhost:8080/html/
+gradlew html:dist
+
+JSNI语法是Java-to-JavaScript

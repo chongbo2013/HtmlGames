@@ -4,7 +4,7 @@ canvas {
 }
 
 body {
-    background-color: #222222;
+    background-color: #000000;
 }
 
 .superdev {
@@ -41,3 +41,5 @@ body {
 .superdev:hover {
     background-color: rgb(100,100,100);
 }
+
+

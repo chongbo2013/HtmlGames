@@ -4,7 +4,7 @@ package com.mygdx.game;
  * JsniTest jsniTest = new JsniTest();
  *		jsniTest.alert("Hello MyGdxGame!");
  *		jsniTest.jsCallJava();
-
+ https://github.com/libgdx/libgdx/wiki/Reflection
  * Created by xff on 2018/6/28.
  */
 

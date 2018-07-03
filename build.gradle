@@ -84,6 +84,8 @@ project(":core") {
         compile "com.badlogicgames.gdx:gdx-bullet:$gdxVersion"
         compile "com.badlogicgames.box2dlights:box2dlights:$box2DLightsVersion"
         compile "com.github.czyzby:gdx-websocket:$libVersion"
+        compile files('libs/tween-engine-api.jar')
+        compile files('libs/tween-engine-api-sources.jar')
     }
 }
 

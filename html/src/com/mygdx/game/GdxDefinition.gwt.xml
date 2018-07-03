@@ -5,6 +5,10 @@
 	<inherits name='com.badlogic.gdx.physics.box2d.box2d-gwt' />
 	<inherits name='com.badlogic.gdx.ai' />
 	<inherits name='Box2DLights' />
+	<inherits name='com.github.czyzby.websocket.GdxWebSocketGwt' />
+	<extend-configuration-property name="gdx.reflect.include" value="com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion"/>
+
+	<extend-configuration-property name="gdx.reflect.include" value="com.mygdx.game.actor.BarActor"/>
 
 	<inherits name='MyGdxGame' />
 	<entry-point class='com.mygdx.game.client.HtmlLauncher' />

@@ -409,7 +409,6 @@ public class GameStage extends BaseStage {
 			touchSound.play();
 			// 开始游戏时给小鸟设置一个向上的速度
 			birdActor.setVelocityY(Res.Physics.JUMP_VELOCITY);
-
 		} else if (gameState == GameState.fly) {
 			// 小鸟正在飞翔状态(没有碰撞到水管和地板), 并且没有飞出屏幕上方, 则响应屏幕触摸给小鸟设置一个向上的速度
 			if (birdActor.getTopY() < getHeight()) {

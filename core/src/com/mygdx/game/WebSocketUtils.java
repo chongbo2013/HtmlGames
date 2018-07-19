@@ -20,6 +20,12 @@ public class WebSocketUtils implements Disposable {
         socket.connect();
     }
 
+    int count=0;
+    public void click(){
+        JsniTest.debugLog( "发送给服务器" );
+        socket.send("Hello from client!"+count);
+        count++;
+    }
     private static WebSocketAdapter getListener() {
         return new WebSocketAdapter() {
             @Override
@@ -38,6 +44,7 @@ public class WebSocketUtils implements Disposable {
             @Override
             public boolean onMessage(final WebSocket webSocket, final String packet) {
                 Gdx.app.log("WS", "Got message: " + packet);
+                JsniTest.debugLog( "收到服务器" );
                 return FULLY_HANDLED;
             }
         };

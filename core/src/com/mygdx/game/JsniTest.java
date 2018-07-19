@@ -18,6 +18,11 @@ public class JsniTest {
 	    $wnd.alertStr(str);
 	}-*/;
 
+    public static native void debugLog(String str)
+	 /*-{
+	    $wnd.gdxLog(str);
+	}-*/;
+
     /**
      * java 调用 js  （在这个方法中会先 调用一次outJsCallGwt 方法 类似于声明该方法[必须]。 在js 的callJavafunction 方法中会调用 outJsCallGwt方法）
      */

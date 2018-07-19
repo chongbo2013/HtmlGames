@@ -11,6 +11,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.utils.Disposable;
 
+import com.badlogic.gdx.utils.Logger;
 import com.mygdx.game.res.Res;
 import com.mygdx.game.screen.GameScreen;
 
@@ -44,9 +45,10 @@ public class MyGdxGame extends Game {
     private BitmapFont fpsBitmapFont;
     /** 用于调试显示帧率 */
     private FPSDebug fpsDebug;
-
+   public static WebSocketUtils webSocketUtils;
     @Override
     public void create() {
+        webSocketUtils=new WebSocketUtils();
         // 设置 LOG 输出级别
         Gdx.app.setLogLevel(Application.LOG_DEBUG);
 
@@ -88,6 +90,8 @@ public class MyGdxGame extends Game {
             fpsDebug = new FPSDebug();
             fpsDebug.init(fpsBitmapFont, 24);
         }
+
+        JsniTest.debugLog( "my debug message");
     }
 
     @Override
@@ -102,6 +106,9 @@ public class MyGdxGame extends Game {
         // 判断是否需要渲染帧率
         if (SHOW_FPS) {
             fpsDebug.render();
+        }
+        if(Gdx.input.isTouched()){
+            webSocketUtils.click();
         }
     }
 
